@@ -4,6 +4,7 @@
     });
 });*/
 
+
 $(function () {
     $('.district').click(function () {
         var addressValue = $(this).attr("name");
@@ -13,6 +14,10 @@ $(function () {
 
         $('.screen_toggle').removeClass('active');
         $(addressValue).addClass('active');
+
+        var addresstext = $(this).text();
+        console.log(addresstext);
+        $('#districttext').text(addresstext);
     });
 
     $('.time').click(function () {
@@ -24,6 +29,8 @@ $(function () {
 
     $('.tablist').click(function () {
         var nameValue = $(this).attr("name");
+        console.log('you choice : '+nameValue);
+
         var relValue = $(this).attr("rel");
         var revValue = $(this).attr("rev");
         $('.screenB').removeClass('active');
@@ -39,4 +46,5 @@ $(function () {
         $(this).addClass('active');
     });
 });
+
 
