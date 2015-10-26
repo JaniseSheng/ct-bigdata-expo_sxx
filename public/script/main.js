@@ -1,8 +1,8 @@
-$(function () {
+/*$(function () {
     $('.tabs').tabslet({
-        active: 1
+        active: 2
     });
-});
+});*/
 
 $(function () {
     $('.district').click(function () {

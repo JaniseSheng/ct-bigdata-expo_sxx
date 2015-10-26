@@ -13,7 +13,17 @@ router.get('/', function (req, res) {
 
 // get 旅游页面
 router.get('/travel', function (req, res) {
-  res.render('travel', { title: '旅游' });
+  res.render('main_tourism', { title: '旅游' });
+});
+
+// get 房产页面
+router.get('/house', function (req, res) {
+  res.render('main_house', { title: '房产' });
+});
+
+// get 汽车页面
+router.get('/car', function (req, res) {
+  res.render('main_car', { title: '汽车' });
 });
 
 
